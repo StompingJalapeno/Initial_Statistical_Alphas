@@ -22,12 +22,12 @@ It is based on ATR volatility and highest price for Ensemble strategy.
 4. Mutiple Timeframe Strategy
 The true range indicator is taken as the greatest of the following: current high less the current low; the absolute value of the current high less the previous close; and the absolute value of the current low less the previous close.
 5. To address any potential overfitting, we validated our strategy by generating random signals and dividing the dataframe into two halves. We then checked these random signals against the strategy. Since there was no mismatch, it indicates that our strategy is not overfitted, and no forward-looking bias is present.
-6. 
+
 ## Code Structure
 1. main_1_btc.py   ->   BTC : Double Timeframe Strategy Design
 2. main_1_eth.py   ->   ETH : Double Timeframe Strategy Design
 3. main_2_btc.py   ->   BTC : Ensemble Strategy with Dynamic Stop Loss (Novel)
 4. main_2_eth.py   ->   ETH : SuperTrend Indicator Based Strategy (Optimized)
 
-##Results
+## Results
 1. Obtained a Sharpe ratio of above 12 for ETH/USDT across double timeframes, with minimal drawdown and outperforming benchmark results in 13 out of 16 quarters.
